@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2B1B14" />
+    <meta
+      name="description"
+      content="Ember & Bean is an artisan coffee house in Pune. Small-batch roasted beans, handcrafted drinks and warm moments served daily. Reserve your table today."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Ember & Bean | Artisan Coffee House, Pune</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ember & Bean | Artisan Coffee House, Pune" />
+    <meta
+      property="og:description"
+      content="Small-batch roasted beans, handcrafted drinks, and warm moments served daily at 24 Riverside Avenue, Pune."
+    />
+    <meta property="og:locale" content="en_IN" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "Ember & Bean",
+        "slogan": "Slow mornings. Good coffee. Better moments.",
+        "servesCuisine": ["Coffee", "Breakfast", "Bakery", "Desserts"],
+        "priceRange": "₹₹",
+        "telephone": "+91 98765 43210",
+        "email": "hello@emberandbean.in",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "24 Riverside Avenue",
+          "addressLocality": "Pune",
+          "addressRegion": "Maharashtra",
+          "postalCode": "411001",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "22:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday"],
+            "opens": "08:00",
+            "closes": "23:30"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

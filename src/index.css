@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+:root {
+  --espresso: #2b1b14;
+  --coffee: #6f4e37;
+  --caramel: #c88a4a;
+  --caramel-dark: #a96e33;
+  --cream: #f7f1e8;
+  --warm-white: #fff9f0;
+  --text: #2a211d;
+  --muted: #766a63;
+  --border-soft: rgba(42, 33, 29, 0.1);
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+
+  --color-espresso: var(--espresso);
+  --color-espresso-light: #3e2a20;
+  --color-coffee: var(--coffee);
+  --color-caramel: var(--caramel);
+  --color-caramel-dark: var(--caramel-dark);
+  --color-cream: var(--cream);
+  --color-warmwhite: var(--warm-white);
+  --color-ink: var(--text);
+  --color-muted: var(--muted);
+
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-hero-float: hero-float 7s ease-in-out infinite;
+  --animate-marquee-pulse: marquee-pulse 3s ease-in-out infinite;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(22px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes hero-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes marquee-pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.45;
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-warmwhite font-sans text-ink antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif;
+  }
+
+  ::selection {
+    background-color: var(--caramel);
+    color: var(--warm-white);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--caramel);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@utility glass {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+@utility glass-dark {
+  background: rgba(43, 27, 20, 0.6);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

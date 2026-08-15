@@ -1,0 +1,275 @@
+import { imageUrl } from '../lib/images'
+
+export type MenuCategory =
+  | 'Coffee'
+  | 'Cold Drinks'
+  | 'Tea'
+  | 'Breakfast'
+  | 'Bakery'
+  | 'Desserts'
+
+export interface MenuItem {
+  id: number
+  name: string
+  category: MenuCategory
+  description: string
+  price: number
+  image: string
+  vegetarian: boolean
+  popular?: boolean
+}
+
+export const menuCategories: Array<MenuCategory | 'All'> = [
+  'All',
+  'Coffee',
+  'Cold Drinks',
+  'Tea',
+  'Breakfast',
+  'Bakery',
+  'Desserts',
+]
+
+export const menuItems: MenuItem[] = [
+  {
+    id: 1,
+    name: 'Caramel Cinnamon Latte',
+    category: 'Coffee',
+    description: 'Espresso, steamed milk, cinnamon and caramel.',
+    price: 180,
+    image: imageUrl('photo-1495474472287-4d71bcdd2085'),
+    vegetarian: true,
+    popular: true,
+  },
+  {
+    id: 2,
+    name: 'Classic Cappuccino',
+    category: 'Coffee',
+    description: 'Double espresso with silky microfoam.',
+    price: 160,
+    image: imageUrl('photo-1541167760496-1628856ab772'),
+    vegetarian: true,
+    popular: true,
+  },
+  {
+    id: 3,
+    name: 'Hazelnut Mocha',
+    category: 'Coffee',
+    description: 'Dark chocolate, espresso and roasted hazelnut.',
+    price: 210,
+    image: imageUrl('photo-1514432324607-a09d9b4aefdd'),
+    vegetarian: true,
+    popular: true,
+  },
+  {
+    id: 4,
+    name: 'Flat White',
+    category: 'Coffee',
+    description: 'Double ristretto with velvety microfoam.',
+    price: 170,
+    image: imageUrl('photo-1509042239860-f550ce710b93'),
+    vegetarian: true,
+  },
+  {
+    id: 5,
+    name: 'Pour Over · Single Origin',
+    category: 'Coffee',
+    description: 'Hand-brewed, bright and clean. Ask for today\u2019s origin.',
+    price: 220,
+    image: imageUrl('photo-1497935586351-b67a49e012bf'),
+    vegetarian: true,
+  },
+  {
+    id: 6,
+    name: 'Double Espresso',
+    category: 'Coffee',
+    description: 'A bold, syrupy shot pulled from house roast.',
+    price: 120,
+    image: imageUrl('photo-1510591509098-f4fdc6d0ff04'),
+    vegetarian: true,
+  },
+  {
+    id: 7,
+    name: 'Iced Americano',
+    category: 'Cold Drinks',
+    description: 'Double espresso over ice, finished with cold water.',
+    price: 150,
+    image: imageUrl('photo-1517701604599-bb29b565090c'),
+    vegetarian: true,
+  },
+  {
+    id: 8,
+    name: 'Slow-Steeped Cold Brew',
+    category: 'Cold Drinks',
+    description: 'Steeped for 18 hours, naturally sweet and smooth.',
+    price: 190,
+    image: imageUrl('photo-1517701550927-30cf4ba1dba5'),
+    vegetarian: true,
+    popular: true,
+  },
+  {
+    id: 9,
+    name: 'Iced Matcha Latte',
+    category: 'Cold Drinks',
+    description: 'Stone-ground matcha shaken with cold milk.',
+    price: 210,
+    image: imageUrl('photo-1515823064-d6e0c04616a7'),
+    vegetarian: true,
+  },
+  {
+    id: 10,
+    name: 'Lemon Mint Cooler',
+    category: 'Cold Drinks',
+    description: 'Fresh lemon, mint and sparkling water over ice.',
+    price: 140,
+    image: imageUrl('photo-1556679343-c7306c1976bc'),
+    vegetarian: true,
+  },
+  {
+    id: 11,
+    name: 'House Masala Chai',
+    category: 'Tea',
+    description: 'Slow-brewed with our signature spice blend.',
+    price: 130,
+    image: imageUrl('photo-1533777857889-4be7c70b33f7'),
+    vegetarian: true,
+    popular: true,
+  },
+  {
+    id: 12,
+    name: 'Ceremonial Matcha',
+    category: 'Tea',
+    description: 'Whisked ceremonial-grade matcha with warm milk.',
+    price: 210,
+    image: imageUrl('photo-1515823064-d6e0c04616a7'),
+    vegetarian: true,
+  },
+  {
+    id: 13,
+    name: 'Darjeeling First Flush',
+    category: 'Tea',
+    description: 'Delicate, floral notes from the Himalayan foothills.',
+    price: 150,
+    image: imageUrl('photo-1564890369478-c89ca6d9cde9'),
+    vegetarian: true,
+  },
+  {
+    id: 14,
+    name: 'Chamomile Calm',
+    category: 'Tea',
+    description: 'A soothing, caffeine-free herbal infusion.',
+    price: 140,
+    image: imageUrl('photo-1597318181409-cf64d0b5d8a2'),
+    vegetarian: true,
+  },
+  {
+    id: 15,
+    name: 'Avocado Toast',
+    category: 'Breakfast',
+    description: 'Sourdough, smashed avocado, herbs and chili oil.',
+    price: 260,
+    image: imageUrl('photo-1541519227354-08fa5d50c44d'),
+    vegetarian: true,
+    popular: true,
+  },
+  {
+    id: 16,
+    name: 'Berry Pancake Stack',
+    category: 'Breakfast',
+    description: 'Fluffy pancakes, seasonal berries and maple syrup.',
+    price: 290,
+    image: imageUrl('photo-1528207776546-365bb710ee93'),
+    vegetarian: true,
+    popular: true,
+  },
+  {
+    id: 17,
+    name: 'Shakshuka Skillet',
+    category: 'Breakfast',
+    description: 'Baked eggs, spiced tomato, feta and warm bread.',
+    price: 280,
+    image: imageUrl('photo-1504754524776-8f4f37790ca0'),
+    vegetarian: false,
+  },
+  {
+    id: 18,
+    name: 'Sunrise Breakfast Plate',
+    category: 'Breakfast',
+    description: 'Eggs any style, sourdough, herbs and grilled tomato.',
+    price: 290,
+    image: imageUrl('photo-1484723091739-30a097e8f929'),
+    vegetarian: false,
+  },
+  {
+    id: 19,
+    name: 'Butter Croissant',
+    category: 'Bakery',
+    description: 'Flaky, buttery and baked fresh every morning.',
+    price: 140,
+    image: imageUrl('photo-1555507036-ab1f4038808a'),
+    vegetarian: true,
+  },
+  {
+    id: 20,
+    name: 'Chocolate Croissant',
+    category: 'Bakery',
+    description: 'Laminated pastry with a molten dark chocolate core.',
+    price: 160,
+    image: imageUrl('photo-1509440159596-0249088772ff'),
+    vegetarian: true,
+  },
+  {
+    id: 21,
+    name: 'Country Sourdough & Jam',
+    category: 'Bakery',
+    description: 'Thick-cut sourdough with housemade berry jam.',
+    price: 160,
+    image: imageUrl('photo-1549931319-a545dcf3bc73'),
+    vegetarian: true,
+  },
+  {
+    id: 22,
+    name: 'Tomato Mozzarella Ciabatta',
+    category: 'Bakery',
+    description: 'Pesto, tomato, mozzarella, toasted until golden.',
+    price: 240,
+    image: imageUrl('photo-1509722747041-616f39b57569'),
+    vegetarian: true,
+  },
+  {
+    id: 23,
+    name: 'Classic Tiramisu',
+    category: 'Desserts',
+    description: 'Espresso-soaked savoiardi, mascarpone, cocoa.',
+    price: 250,
+    image: imageUrl('photo-1571877227200-a0d98ea607e9'),
+    vegetarian: true,
+    popular: true,
+  },
+  {
+    id: 24,
+    name: 'Basque Cheesecake',
+    category: 'Desserts',
+    description: 'Burnt-top, creamy centre, made in-house.',
+    price: 240,
+    image: imageUrl('photo-1524351199678-941a58a3df50'),
+    vegetarian: true,
+  },
+  {
+    id: 25,
+    name: 'Chocolate Lava Cake',
+    category: 'Desserts',
+    description: 'Warm molten centre with vanilla bean ice cream.',
+    price: 260,
+    image: imageUrl('photo-1606313564200-e75d5e30476c'),
+    vegetarian: true,
+  },
+]
+
+export const featuredMenuItems = [
+  menuItems.find((item) => item.id === 1)!,
+  menuItems.find((item) => item.id === 2)!,
+  menuItems.find((item) => item.id === 3)!,
+  menuItems.find((item) => item.id === 19)!,
+  menuItems.find((item) => item.id === 15)!,
+  menuItems.find((item) => item.id === 16)!,
+]
