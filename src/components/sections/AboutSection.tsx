@@ -1,3 +1,4 @@
+import { Star } from 'lucide-react'
 import { imageUrl } from '../../lib/images'
 import { cn } from '../../lib/cn'
 import Button from '../Button'
@@ -17,7 +18,7 @@ const stats = [
 
 export default function AboutSection({ reversed = false, className }: AboutSectionProps) {
   return (
-    <section className={cn('py-20 lg:py-28', className)} aria-labelledby="about-story-heading">
+    <section className={cn('py-24 lg:py-36', className)} aria-labelledby="about-story-heading">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div
           className={cn(
@@ -35,8 +36,9 @@ export default function AboutSection({ reversed = false, className }: AboutSecti
                 className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-xl shadow-espresso/15 sm:aspect-[5/6]"
               />
               <div className="glass-dark absolute -bottom-5 left-5 right-5 rounded-2xl p-5 sm:left-8 sm:right-auto sm:max-w-xs">
-                <p className="text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-caramel">
-                  {'\u2605'} 4.9 · Loved by our guests
+                <p className="flex items-center gap-1.5 text-[0.65rem] font-medium uppercase tracking-[0.24em] text-caramel">
+                  <Star className="size-3.5 fill-caramel text-caramel" aria-hidden="true" />
+                  4.9 · Loved by our guests
                 </p>
                 <p className="mt-1.5 font-serif text-base italic text-warmwhite">
                   “The kind of place that makes you slow down on purpose.”

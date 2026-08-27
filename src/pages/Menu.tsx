@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Search, SearchX } from 'lucide-react'
-import { imageUrl } from '../lib/images'
 import { menuCategories, menuItems, type MenuItem } from '../data/menu'
 import MenuCard from '../components/MenuCard'
 import MenuTabs, { type TabValue } from '../components/MenuTabs'
@@ -38,7 +37,6 @@ export default function Menu() {
         eyebrow="Our Menu"
         title="Crafted to be savored."
         subtitle="From first sip to last bite."
-        image={imageUrl('photo-1509042239860-f550ce710b93', 1600)}
       />
 
       <section className="bg-warmwhite pb-20 pt-12 lg:pb-28 lg:pt-16">

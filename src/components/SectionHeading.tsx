@@ -28,7 +28,7 @@ export default function SectionHeading({
       {eyebrow && (
         <p
           className={cn(
-            'mb-3 text-xs font-semibold uppercase tracking-[0.22em]',
+            'mb-3 text-[0.68rem] font-medium uppercase tracking-[0.28em]',
             tone === 'dark' ? 'text-caramel-dark' : 'text-caramel',
           )}
         >

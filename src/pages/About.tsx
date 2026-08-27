@@ -1,5 +1,4 @@
 import { Coffee, HandHeart, Hourglass, Sprout } from 'lucide-react'
-import { imageUrl } from '../lib/images'
 import AboutSection from '../components/sections/AboutSection'
 import ExperienceSection from '../components/sections/ExperienceSection'
 import FooterCta from '../components/sections/FooterCta'
@@ -65,7 +64,6 @@ export default function About() {
         eyebrow="Our Story"
         title="Born from a love of slow mornings."
         subtitle="Ember & Bean started with a simple idea: coffee should give people a reason to pause."
-        image={imageUrl('photo-1554118811-1e0d58224f24', 1600)}
       />
 
       <AboutSection reversed className="pt-20" />

@@ -25,7 +25,7 @@ const experiences = [
 
 export default function ExperienceSection() {
   return (
-    <section className="py-20 lg:py-28" aria-labelledby="experience-heading">
+    <section className="py-24 lg:py-36" aria-labelledby="experience-heading">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="The Ember Experience"
@@ -35,7 +35,7 @@ export default function ExperienceSection() {
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {experiences.map((item, index) => (
             <Reveal key={item.title} delay={index * 110}>
-              <article className="group relative overflow-hidden rounded-2xl shadow-lg shadow-espresso/10">
+              <article className="group relative overflow-hidden rounded-[1.75rem] shadow-lg shadow-espresso/10">
                 <img
                   src={item.image}
                   alt={item.alt}

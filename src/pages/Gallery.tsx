@@ -1,4 +1,3 @@
-import { imageUrl } from '../lib/images'
 import GalleryGrid from '../components/GalleryGrid'
 import FooterCta from '../components/sections/FooterCta'
 import PageHero from '../components/PageHero'
@@ -12,7 +11,6 @@ export default function Gallery() {
         eyebrow="The Gallery"
         title="Moments worth a second cup."
         subtitle="Espresso, latte art, interiors and the people who make this place feel like home."
-        image={imageUrl('photo-1497935586351-b67a49e012bf', 1600)}
       />
 
       <section className="bg-warmwhite py-16 lg:py-24">

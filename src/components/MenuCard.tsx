@@ -16,7 +16,7 @@ export default function MenuCard({ item, className }: MenuCardProps) {
   return (
     <article
       className={cn(
-        'group flex h-full flex-col overflow-hidden rounded-2xl border border-ink/5 bg-white shadow-sm transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-espresso/10',
+        'group flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-ink/5 bg-white shadow-sm transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-espresso/10',
         className,
       )}
     >

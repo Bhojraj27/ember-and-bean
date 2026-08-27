@@ -1,5 +1,4 @@
 import { Clock, MapPin, Phone } from 'lucide-react'
-import { imageUrl } from '../lib/images'
 import { site } from '../data/site'
 import ReservationForm from '../components/ReservationForm'
 import PageHero from '../components/PageHero'
@@ -14,7 +13,6 @@ export default function Reservations() {
         eyebrow="Reservations"
         title="Save your seat."
         subtitle="Tell us when and we’ll have the table waiting. Warm coffee, warmer welcome."
-        image={imageUrl('photo-1541167760496-1628856ab772', 1600)}
       />
 
       <section className="bg-warmwhite pb-20 pt-14 lg:pb-28">

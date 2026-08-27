@@ -47,7 +47,7 @@ export default function Navbar() {
           </span>
           <span
             className={cn(
-              'font-serif text-sm font-semibold uppercase tracking-[0.18em] transition-colors duration-500',
+              'font-serif text-sm font-semibold uppercase tracking-[0.22em] transition-colors duration-500',
               scrolled || open || !isHome ? 'text-espresso' : 'text-warmwhite',
             )}
           >
@@ -63,7 +63,7 @@ export default function Navbar() {
               end={link.to === '/'}
               className={({ isActive }) =>
                 cn(
-                  'relative rounded-full px-4 py-2 text-sm font-medium transition-colors duration-300',
+                  'relative rounded-full px-4 py-2 text-[0.8rem] font-medium uppercase tracking-[0.16em] transition-colors duration-300',
                   scrolled || !isHome ? 'text-ink hover:text-caramel-dark' : 'text-warmwhite/85 hover:text-warmwhite',
                   isActive && (scrolled || !isHome ? 'text-caramel-dark' : 'text-warmwhite'),
                 )

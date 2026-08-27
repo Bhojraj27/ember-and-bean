@@ -41,7 +41,6 @@ export default function Contact() {
         eyebrow="Contact"
         title="Come say hello."
         subtitle="Questions, events, wholesale beans or just directions. We read every message."
-        image={imageUrl('photo-1501339847302-ac426a4a7cbb', 1600)}
       />
 
       <section className="bg-warmwhite py-16 lg:py-24">

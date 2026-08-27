@@ -5,7 +5,7 @@ import { cn } from '../lib/cn'
 type Variant = 'primary' | 'outline' | 'light' | 'ghost'
 
 const base =
-  'group/btn inline-flex items-center justify-center gap-2 rounded-full font-medium tracking-wide transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-caramel disabled:pointer-events-none disabled:opacity-60'
+  'group/btn inline-flex cursor-pointer items-center justify-center gap-2 rounded-full font-medium tracking-[0.08em] transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-caramel disabled:pointer-events-none disabled:opacity-60'
 
 const variants: Record<Variant, string> = {
   primary:
